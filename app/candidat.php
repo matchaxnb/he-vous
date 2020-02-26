@@ -1,18 +1,14 @@
 <?php
-include('config.php');
-if ($mysqli->connect_error) {
-    die('Erreur de connexion (' . $mysqli->connect_errno . ') '
-            . $mysqli->connect_error);
-}
+require_once('bootstrap.php');
 if ( isset($_GET['id']) ) {
 
-    $candidat = $mysqli->query("SELECT * FROM candidats WHERE twitter = ".intval($_GET['id']));
+    $target = $sqlite->query("SELECT * FROM targeted_demographics WHERE twitter = ".intval($_GET['id']));
 
-    if ( $candidat->num_rows < 1 ) {
+    if ( $target->numRows < 1 ) {
         exit;
     }
-    $row = $candidat->fetch_assoc();
-    $candidat = $row;
+    $row = $target->fetchArray();
+    $target = $row;
 } else {
     exit;
 }
@@ -24,15 +20,14 @@ if ( isset($_GET['id']) ) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <?php $website_title = "#Stopairbnb"; ?>
-    <title>Pour l’interdiction de Airbnb à Paris</title>
-    <meta name="description" content="JPhotography Minimal Photographey/Photographer Portolio">
+    <title><?php $SETTINGS['title']; ?></title>
+    <meta name="description" content="<?php $SETTINGS['description']; ?>">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -40,14 +35,12 @@ if ( isset($_GET['id']) ) {
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <meta name="twitter:card" content="summary_large_image" />
-    <!-- <meta name="twitter:site" content="@ouimob" />
-    <meta name="twitter:creator" content="@ouimob" /> -->
-    <meta property="og:url" content="http://stopairbnb.ouimob.org/candidat.php?id=<?php echo $candidat['twitter']; ?>" />
-    <meta property="og:title" content="<?php echo $candidat['firstname']; ?> <?php echo $candidat['name']; ?> - <?= $website_title ?>" />
+    <meta property="og:url" content="<?php echo CAUSE_URL; ?>/target.php?id=<?php echo $target['twitter']; ?>" />
+    <meta property="og:title" content="<?php echo $target['firstname']; ?> <?php echo $target['name']; ?> - <?= $website_title ?>" />
     <meta property="og:description" content="Contre Airbnb à Paris" />
-    <meta property="og:image" content="http://stopairbnb.ouimob.org/candidat.php?id=<?php echo $_GET['id']; ?>" />
+    <meta property="og:image" content="http://stopairbnb.ouimob.org/target.php?id=<?php echo $_GET['id']; ?>" />
     <script type="text/javascript">
-    function delayRedirect() { window.location = "http://stopairbnb.wesign.it/fr" }
+    function delayRedirect() { window.location = "<?php echo $SETTINGS['redirect_uri']; ?>"; }
     </script>
   </head>
   <body onload="setTimeout('delayRedirect()', 10)">

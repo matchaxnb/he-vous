@@ -1,0 +1,3 @@
+# in case we run in apache
+Order deny,allow
+Deny from all

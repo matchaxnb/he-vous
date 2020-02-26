@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  hevous:
+    image: registry.gitlab.com/chloetigre/he-vous/he-vous:test
+    labels:
+        - "traefik.enable=true"
+        - "traefik.docker.network=reverse-proxy"
+        - "traefik.http.routers.hevousprod.rule=Host(`he-vous.fr`, `www.he-vous.fr`)"
+        - "traefik.http.services.hevousprod.loadbalancer.server.port=8080"
+        - "traefik.docker.network=net-traefik"
+        - "traefik.http.routers.hevousprod.tls.certresolver=letsencrypt"
+        - "traefik.http.routers.hevousprod.entrypoints=websecure"
+        - "traefik.http.routers.hevousprodhttp.entrypoints=web"
+        - "traefik.http.routers.hevousprodhttp.rule=Host(`he-vous.fr`, `www.he-vous.fr`)"
+        - "traefik.http.routers.hevousprodhttp.middlewares=redirect-to-https@docker"
+    networks:
+        - reverse-proxy
+
+
+networks:
+    reverse-proxy:
+        name: net-traefik
+        external: true
