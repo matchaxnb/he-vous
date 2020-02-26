@@ -79,6 +79,7 @@ include('bootstrap.php');
             }
             ?>
           </div>
+          <h3>Cliquez sur une image pour interpeller un des <?php $SETTINGS['targeted_demographics'] ?> sur Twitter</h3>
         </div>
 
         <br><br>
