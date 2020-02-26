@@ -33,12 +33,22 @@ Interpellons les candidats à l’élection municipales pour qu’ils mettent un
 Pour un Paris qui respire ! <a href="https://unparcextraordener.wesign.it/fr">Signez notre pétition</a>'),
     ),
     CHARTE_PARTICIPATION => array(
-        "title" => "La Charte de la Participation Citoyenne Inclusive",
-        "description" => "une charte de démocratie participacive",
-        "tags" => "#paris18 #democratie #municipales",
+        "title" => "Nous voulons de vraies mesures pour la démocratie participative !",
+        "description" => "Le 18 en Commun propose la charte de la participation inclusive",
+        "tags" => "#municipalisme #democratieparticipative #paris18",
         "cause_name" => CHARTE_PARTICIPATION,
-        "tweet_format" => 'Bonjour %1$s, test encore. %2$s',
-        "custom_text" => "",
+        "tweet_format" => '#DemocratiePourParis Nous voulons de vraies mesures pour la #DémocratieParticipative ! %1$s signez la charte de participation citoyenne et communiquez votre désir d’améliorer la vie démocratique de votre ville #Municipales2020 https://charteparticipationcitoyenneinclusive.wesign.it/fr',
+        "targeted_demographics" => "Candidats à la Mairie de Paris",
+        "hero_text" => "Nous voulons de vraies mesures pour la démocratie participative !",
+        "redirect_uri" => "https://charteparticipationcitoyenneinclusive.wesign.it/fr",
+        "call_to_action_text" => "Cliquez sur une image pour interpeller un des candidats à la Mairie de Paris sur Twitter",
+        "custom_text" => nl2br('La démocratie participative est brandie par les candidats et maires en exercice depuis de nombreuses années comme étendard de leur politique publique. Cependant, des conseils de quartier jusqu’aux consultations locales, peu de moyens sont mis à disposition, l’information fait défaut, et les groupes de travail sont socialement homogènes. Des villes comme Barcelone, Madrid, ou Saillans dans la drôme font bien mieux et regorgent d’inventivité. En conséquence, les villes s’en retrouvent transformées. Ne faisons pas de la démocratie Participative un simple concept marketing !
+
+Le mouvement “18 en commun”, apartisan et inclusif propose une charte de la participation citoyenne. Cette charte n’est pas exhaustive, mais permet d’engager les candidats dans un effort qui sera surveillé par les citoyens et les administrés.
+
+Interpellons les candidats à la mairie de Paris à s’engager à signer la charte de participation citoyenne, et montrons notre soutiens à ces mesures afin que leur engagement ne soit pas ignoré.
+'),
+        "cause_name" => CHARTE_PARTICIPATION,
     ),
 
 );
@@ -47,7 +57,7 @@ Pour un Paris qui respire ! <a href="https://unparcextraordener.wesign.it/fr">Si
 // resolve on which event we are
 
 $valid_cause_name = '/^[a-zA-Z0-9_-]{3,}$/';
-$req_cause = explode('/', $_SERVER['REQUEST_URI'], 3)[1];
+$req_cause = strtok(explode('/', $_SERVER['REQUEST_URI'], 3)[1], '?');
 if (!in_array($req_cause, array_keys($site_settings))) {
     die('unknown cause '.$req_cause);
 }
