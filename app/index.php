@@ -63,7 +63,7 @@ include('bootstrap.php');
                 $nom = $row["name"];
                 $id = $row["twitter"];
                 $twitter = '@'.$row["twitter"];
-                $tweet_to_send = urlencode(sprintf(SETTINGS['tweet_format'], $twitter, SITE_CREDIT));
+                $tweet_to_send = urlencode(sprintf($SETTINGS['tweet_format'], $twitter, SITE_CREDIT));
                 $photo = SITE_BASE_URL.'/assets/'.$id.'.jpg';
 
                   echo '<div class="mix landscape product">
