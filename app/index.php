@@ -7,7 +7,7 @@ include('bootstrap.php');
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="Favicon_Ouimob.ico">
+    <link rel="icon" href="/assets/Favicon_Ouimob.ico">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title><?= $SETTINGS['title'] ?></title>
     <meta name="description" content="<?php echo $SETTINGS['description']; ?>">
@@ -49,7 +49,7 @@ include('bootstrap.php');
 
     <section class="gallery">
         <div style="text-align:center">
-            <h3 style="margin:auto"><?php echo $SETTINGS['targeted_demographics']; ?></h3>
+            <h3 style="margin:auto"><?php echo $SETTINGS['call_to_action_text']; ?></h3>
         </div>
       <div class="row">
           <div class="fw mix-container home-gallery">
@@ -79,7 +79,6 @@ include('bootstrap.php');
             }
             ?>
           </div>
-          <h3>Cliquez sur une image pour interpeller un des <?php $SETTINGS['targeted_demographics'] ?> sur Twitter</h3>
         </div>
 
         <br><br>
@@ -91,7 +90,8 @@ include('bootstrap.php');
         </div>
     </section>
 <div class="footer-info">
-<iframe width="540" height="429" src="https://my.sendinblue.com/users/subscribe/js_id/wr4/id/4" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe><footer>
+<!-- <iframe width="540" height="429" src="https://my.sendinblue.com/users/subscribe/js_id/wr4/id/4" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe> -->
+    <footer>
       <div class="container-fluid">
             <div class="footer-info">
               <div class="footer-title">

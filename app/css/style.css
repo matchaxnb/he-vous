@@ -284,6 +284,10 @@ Header Text
     color: #696969;
 }
 
+.cta {
+    text-align:center;
+    margin: 0 auto;
+}
 /*==========
 Home Gallery
 ==========*/
