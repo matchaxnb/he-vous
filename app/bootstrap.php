@@ -23,7 +23,7 @@ $site_settings = array(
         "targeted_demographics" => "Candidats à la Mairie de Paris",
         "hero_text" => "Nous demandons un parc pour le 18ème !",
         "redirect_uri" => "https://unparcextraordener.wesign.it/fr",
-        "call_to_action_text" => "Cliquez sur une image pour interpeller un des candidats à la Mairie du 18ème sur Twitter",
+        "call_to_action_text" => "Cliquez sur une image pour interpeller un des candidats à la Mairie de Paris sur Twitter",
         "custom_text" => nl2br('<h1>Pour un parc Extra-Ordener dans le 18ème</h1>
 <p>Dans le 18e arrondissement de Paris friche SNCF va faire place à un massif plan de bétonisation avec un jardinet semi-privé pour faire bonne mesure. Ce projet est contraire aux besoins de notre quartier populaire et à rebours de l\'urgence écologique.
 Ce quartier est le moins pourvu en espace vert de tout Paris : 1% d’espace vert par habitant, 10 fois moins que ce que préconise l’OMS.
