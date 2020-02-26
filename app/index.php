@@ -100,6 +100,9 @@ include('bootstrap.php');
               <div class="footer-social">
                  <a rel="noopener" href="https://www.facebook.com/WeSignIt/" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a rel="noopener" href="https://twitter.com/WeSignit" target="_blank"><i class="fab fa-twitter"></i></a>
+                &nbsp;|&nbsp;
+                <a rel="noopener" href="https://twitter.com/matcha_xnb" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a rel="noopener" href="https://patreon.com/matcha" target="_blank"><i class="fab fa-patreon"></i></a>
               </div>
             </div>
       </div>
