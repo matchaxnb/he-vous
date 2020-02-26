@@ -47,6 +47,8 @@ Pour un Paris qui respire ! <a href="https://unparcextraordener.wesign.it/fr">Si
 Le mouvement “18 en commun”, apartisan et inclusif propose une charte de la participation citoyenne. Cette charte n’est pas exhaustive, mais permet d’engager les candidats dans un effort qui sera surveillé par les citoyens et les administrés.
 
 Interpellons les candidats à la mairie de Paris à s’engager à signer la charte de participation citoyenne, et montrons notre soutiens à ces mesures afin que leur engagement ne soit pas ignoré.
+
+<a href="https://charteparticipationcitoyenneinclusive.wesign.it/fr">Signez la pétition pour la Charte de la participation citoyenne inclusive !</a>
 '),
         "cause_name" => CHARTE_PARTICIPATION,
     ),
