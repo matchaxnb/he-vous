@@ -13,10 +13,13 @@ const SITE_CREDIT = "[Appel propulsé par he-vous.fr]";
 tweet format: %1$s is the name of the tweet target
               %2$s is the credit for the tweet. please mention us!
 */
-$site_settings = json_decode(file_get_contents(PATH_ROOT.'/data/config.json'), true);
+$site_settings_list = json_decode(file_get_contents(PATH_ROOT.'/data/config.json'), true);
 
-
-print(json_encode($site_settings));
+// reformatting the settings from a list to an associative array.
+// we use lists because they can be represented as a json schema easily
+$site_settings = array_combine(array_map(function($x) { return $x['url_slug']; }, $site_settings_list),
+                               array_map(function($x) { return $x['settings']; }, $site_settings_list)
+);
 // resolve on which event we are
 
 $valid_cause_name = '/^[a-zA-Z0-9_-]{3,}$/';

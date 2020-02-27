@@ -85,7 +85,7 @@ include('bootstrap.php');
 
            <div class="row">
           <div class="fw mix-container home-gallery custom-text">
-            <?php echo $SETTINGS['custom_text']; ?>
+            <p><?php echo $SETTINGS['custom_text']; ?></p>
           </div>
         </div>
     </section>

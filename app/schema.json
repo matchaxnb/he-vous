@@ -1,0 +1,127 @@
+{
+  "schema": {
+    "friends": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Cause",
+        "properties": {
+          "url_slug": {
+            "type": "string",
+            "title": "URL slug (5 to 40 chars, a-z, A-Z, 0-9, dash and underscore)",
+            "required": true,
+            "pattern": "[a-zA-Z0-9-]{5,40}"
+          },
+          "settings": {
+            "type": "object",
+            "title": "Parameters",
+            "properties": {
+         "properties": {
+           "call_to_action_text": {
+             "$id": "#/items/properties/settings/properties/call_to_action_text",
+             "type": "string",
+             "title": "Call to action text",
+             "default": "",
+             "examples": [
+               "Cliquez sur une image pour interpeller un des candidats à la Mairie de Paris sur Twitter"
+             ],
+             "pattern": "^(.*)$"
+           },
+           "cause_name": {
+             "$id": "#/items/properties/settings/properties/cause_name",
+             "type": "string",
+             "title": "The Cause_name Schema",
+             "default": "",
+             "examples": [
+               "charte-18encommun"
+             ],
+             "pattern": "^(.*)$"
+           },
+           "custom_text": {
+             "$id": "#/items/properties/settings/properties/custom_text",
+             "type": "string",
+             "title": "Custom text",
+             "default": "",
+             "examples": [
+               "La démocratie participative est brandie par les candidats et maires en exercice depuis de nombreuses années comme étendard de leur politique publique. Cependant, des conseils de quartier jusqu’aux consultations locales, peu de moyens sont mis à disposition, l’information fait défaut, et les groupes de travail sont socialement homogènes. Des villes comme Barcelone, Madrid, ou Saillans dans la drôme font bien mieux et regorgent d’inventivité. En conséquence, les villes s’en retrouvent transformées. Ne faisons pas de la démocratie Participative un simple concept marketing !<br />\r\n<br />\r\nLe mouvement “18 en commun”, apartisan et inclusif <a href=\"http://18encommun.fr/la-charte/\">propose une charte de la participation citoyenne</a>. Cette charte n’est pas exhaustive, mais permet d’engager les candidats dans un effort qui sera surveillé par les citoyens et les administrés.<br />\r\n<br />\r\nInterpellons les candidats à la mairie de Paris à s’engager à signer la charte de participation citoyenne, et montrons notre soutien à ces mesures afin que leur engagement ne soit pas ignoré.<br />\r\n<br />\r\n<a href=\"https://charteparticipationcitoyenneinclusive.wesign.it/fr\">Signez la pétition pour la Charte de la participation citoyenne inclusive !</a><br />\r\n"
+             ],
+             "pattern": "^(.*)$"
+           },
+           "description": {
+             "$id": "#/items/properties/settings/properties/description",
+             "type": "textarea",
+             "title": "Description courte (de 10 à 280 caractères)",
+             "default": "",
+             "examples": [
+               "Le 18 en Commun propose la charte de la participation inclusive"
+             ],
+             "pattern": "^(.{10,280}$"
+           },
+           "hero_text": {
+             "$id": "#/items/properties/settings/properties/hero_text",
+             "type": "textarea",
+             "title": "Hero Text (10 caractères mini)",
+             "default": "",
+             "examples": [
+               "Nous voulons de <a href=\"http://18encommun.fr/la-charte/\">vraies mesures</a> pour la démocratie participative !"
+             ],
+             "pattern": "^(.{10,})$"
+           },
+           "redirect_uri": {
+             "$id": "#/items/properties/settings/properties/redirect_uri",
+             "type": "string",
+             "title": "URL de redirection",
+             "default": "https://",
+             "examples": [
+               "https://charteparticipationcitoyenneinclusive.wesign.it/fr"
+             ],
+             "pattern": "^http(.*)$"
+           },
+           "tags": {
+             "$id": "#/items/properties/settings/properties/tags",
+             "type": "string",
+             "title": "Tags",
+             "default": "",
+             "examples": [
+               "#municipalisme #democratieparticipative #paris18"
+             ],
+             "pattern": "^(.*)$"
+           },
+           "targeted_demographics": {
+             "$id": "#/items/properties/settings/properties/targeted_demographics",
+             "type": "enum",
+             "title": "The Targeted_demographics Schema",
+             "enum": [
+                "candidats-paris",
+                "candidats-18"
+             ]
+           },
+           "title": {
+             "$id": "#/items/properties/settings/properties/title",
+             "type": "string",
+             "title": "Title",
+             "default": "",
+             "examples": [
+               "Nous voulons de <a href=\"http://18encommun.fr/la-charte/\">vraies mesures</a> pour la démocratie participative !"
+             ],
+             "pattern": "^(.*)$"
+           },
+           "tweet_format": {
+             "$id": "#/items/properties/settings/properties/tweet_format",
+             "type": "textarea",
+             "title": "Tweet formatting (%1$s = target @, %2$s = he-vous signature)",
+             "default": "",
+             "examples": [
+               "#DemocratiePourParis Nous voulons de vraies mesures pour la #DémocratieParticipative ! %1$s signez la charte de participation citoyenne et communiquez votre désir d’améliorer la vie démocratique de votre ville #Municipales2020 https://charteparticipationcitoyenneinclusive.wesign.it/fr"
+             ],
+             "pattern": "^(.*)$"
+           }
+         }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
