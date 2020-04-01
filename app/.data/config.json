@@ -28,5 +28,35 @@
             "title": "Les citoyen.ne.s réclament un parc central dans le 18ème !",
             "tweet_format": ".%1$s Les quartiers populaires aussi ont le droit de respirer ! Le 18ème réclame son grand parc central, en pleine terre et accessible à tout.e.s. #UnParcExtraOrdener #UnParcPourLe18ème https://unparcextraordener.wesign.it/fr\"\n"
         }
+    },
+    {
+        "url_slug": "je-ne-suis-pas-un-heros",
+        "settings": {
+            "call_to_action_text": "Cliquez sur l'image pour interpeller Emmanuel Macron sur twitter",
+            "cause_name": "#JeNeSuisPasUnHeros",
+            "custom_text": "<p><strong>Vous avez signé la <a href=\"https://confinesmobilises.wesign.it/fr\">pétition de la campagne #JeNeSuisPasUnHéros</a>.</strong>  Portée par des collectifs inter-hôpitaux, scientifiques et citoyens, elle exige du matériel de protection complet pour les personnels hospitaliers, des embauches, des hausses de salaires, la fin de la T2A, le retrait du plan d’économie de 4 milliards d’euros dans le secteur de la santé. </p> <p><strong>Il est temps aujourd'hui d'interpeler massivement notre président de la république </strong>afin qu'il annonce un programme de mesures à la hauteur de ces enjeux </p>\n",
+            "description": "#JeNeSuisPasUnhéros : Covid-19, Sauvons l'hôpital public",
+            "hero_text": "Coronavirus: Des mesures concrètes pour l’hôpital public!",
+            "redirect_uri": "https://confinesmobilises.wesign.it/fr",
+            "tags": "Coronavirus, covid-19, hôpital Public",
+            "title": "Interpellons le Président de la république pour sauver l'hôpital public",
+            "targeted_demographics": "Emmanuel Macron, Président de la République",
+            "tweet_format": ". \"%1$s\" Les personnels hôspitaliers ne sont pas des héros, mais payent les conséquences d'un système de santé dégradé. Nous voulons de vraies mesures pour l'hôpital public #JeNesuisPasUnHéros #COVID19fr via - @WeSignit >>> https://confinesmobilises.wesign.it/fr\n"
+        }
+    },
+    {
+        "url_slug": "confines-dehors",
+        "settings": {
+            "call_to_action_text": "Cliquez sur l'image pour interpeller le Ministre du Logement Julien Denormandie sur twitter",
+            "cause_name": "#ConfinésDehors",
+            "custom_text": "<p><strong>Vous avez signé <a href=\"https://confine-dehors.wesign.it/fr\">la pétition pour la réquisition des logements</a>, car près de 200 000 personnes vivent aujourd'hui sans abri&nbsp;</strong>. Pendant cette période de crise le gouvernement a fait quelques réquisitions d'hôtels, mais cela est loin d'être suffisant. </p> <p>Pour leur santé et la santé de toutes et tous, le président de la République, le gouvernement et les maires des grandes villes doivent prendre immédiatement toutes les dispositions nécessaires pour <strong>réquisitionner les logements vacants ainsi que les logements touristiques loués sur des plateformes de type Airbnb</strong></p>\n",
+            "description": "#Confinésdehors: Réquisition des logements vides pour reloger les sans-abri",
+            "hero_text": "Coronavirus: Demandons au ministre du logement la réquisition des logements pour les sans abris !",
+            "redirect_uri": "https://confine-dehors.wesign.it/fr",
+            "targeted_demographics": "Julien Denormandie, Ministre du Logement",
+            "tags": "Sdf, logement, Airbnb, coronavirus, covid19",
+            "title": "Interpellons le Ministre du Logement pour reloger les SDF",
+            "tweet_format": ". \"%1$s\" Vos mesures ne sont pas suffisantes. Réquisitionnez des logements vacants et des appartements loués sur les plateformes comme #Airbnb pour reloger immédiatement tous les sans-abri. #SDF #ConfinésDehors - via @WeSignit 👉👉https://confine-dehors.wesign.it/fr\n"
+        }
     }
 ]
