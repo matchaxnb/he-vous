@@ -19,10 +19,10 @@
       mais permet d’engager les candidats dans un effort qui sera surveillé par les
       citoyens et les administrés.<br />
       <br />
-      Interpellons les candidats à la mairie de Paris à s’engager à signer la charte de participation citoyenne,
+      Interpellons les candidat.e.s à la mairie de Paris à s’engager à signer la charte de participation citoyenne,
       et montrons notre soutien à ces mesures afin que leur engagement ne soit pas ignoré.<br />
       <br />
-      <a href="https://charteparticipationcitoyenneinclusive.wesign.it/fr">Signez la pétition pour la Charte de la participation citoyenne inclusive !</a>
+      <a href="https://municipales-citoyennes.wesign.it/fr">Signez la pétition pour la Charte de la participation citoyenne inclusive !</a>
       <br />
       </p>
     description: Le 18 en Commun propose la charte de la participation inclusive
@@ -32,9 +32,7 @@
     redirect_uri: https://charteparticipationcitoyenneinclusive.wesign.it/fr
     tags: "#municipalisme #democratieparticipative #paris18"
     targeted_demographics: Candidats à la Mairie de Paris
-    title: >
-      Nous voulons de <a href="http://18encommun.fr/la-charte/">vraies mesures</a>
-      pour la démocratie participative !
+    title: Nous voulons de vraies mesures pour la démocratie participative !
     tweet_format: >
         Nous voulons de vraies mesures pour la #DémocratieParticipative ! %1$s signez la charte de participation citoyenne et communiquez votre désir d’améliorer la vie démocratique de votre ville #MunicipalesCitoyennes https://municipales-citoyennes.wesign.it/fr via - @WeSignit
 
